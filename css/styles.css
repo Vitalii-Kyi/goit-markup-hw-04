@@ -171,7 +171,8 @@ body {
     background-image: linear-gradient(var(--hero-bg-color),var(--hero-bg-color)), url(../images/people-office1.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
+    /*background-size: 1440px;*/
     }
 
 .hero-title {
