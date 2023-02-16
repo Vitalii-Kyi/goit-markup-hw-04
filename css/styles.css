@@ -378,11 +378,13 @@ body {
     justify-content: center;
 }
 
-/*
 .customers-link:is(:hover,:focus) {
-    border-bottom: #4d5ae5;
+    border-color: var(--pressed-state-color);
 }
-*/
+
+.customers-link:is(:hover,:focus) >.customers-icon {
+    fill: var(--pressed-state-color);
+}
 
 .customers-icon {
     fill: var(--customers-icon-color);
