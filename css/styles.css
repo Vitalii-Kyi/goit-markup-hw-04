@@ -211,7 +211,7 @@ body {
 
 
 
-/*--section1--*/
+/*--section1-Our advantages--*/
 
 .advantages-section {
     padding-top: 120px;
@@ -243,7 +243,7 @@ body {
     letter-spacing: 0.02em;
 }
 
-/*--section2--*/
+/*--section2-What are we doing--*/
 
 .services-section {
     padding-bottom: 120px;
@@ -266,7 +266,7 @@ body {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/*--section3--*/
+/*--section3-Our Team--*/
 
 .team-section {
     padding-top: 120px;
@@ -388,19 +388,23 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: var(--customers-icon-color);
+}
+
+.customers-icon {
+    fill: currentColor;
 }
 
 .customers-link:is(:hover,:focus) {
     border-color: var(--pressed-state-color);
+    color: var(--pressed-state-color);
 }
-
+/*
 .customers-link:is(:hover,:focus) >.customers-icon {
     fill: var(--pressed-state-color);
 }
+*/
 
-.customers-icon {
-    fill: var(--customers-icon-color);
-}
 
 
 
