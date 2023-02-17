@@ -228,7 +228,19 @@ body {
     max-width: 264px;
 }
 
+.advantages-icon {
+    /*width: 264px;*/
+    height: 112px;
+    /*margin-bottom: 8px;*/
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+}
+
 .advantages-tile {
+    margin-top: 8px;
     margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
