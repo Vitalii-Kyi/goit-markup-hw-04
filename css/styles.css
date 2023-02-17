@@ -9,6 +9,7 @@
     --general-text-color: #434455;
     --hero-bg-color:rgba(46, 47, 66, 0.7);
     --customers-icon-color: #8e8f99;
+    --footer-icon-active: #31d0aa;
 }
 
 p,
@@ -229,9 +230,7 @@ body {
 }
 
 .advantages-icon {
-    /*width: 264px;*/
     height: 112px;
-    /*margin-bottom: 8px;*/
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -411,13 +410,6 @@ body {
     border-color: var(--pressed-state-color);
     color: var(--pressed-state-color);
 }
-/*
-.customers-link:is(:hover,:focus) >.customers-icon {
-    fill: var(--pressed-state-color);
-}
-*/
-
-
 
 
 /*--footer--*/
@@ -426,15 +418,18 @@ body {
     padding: 100px 0;
     background-color: var(--dark-color);
 }
+.footer-container {
+    display: flex;
+}
 
-.footer-block {
+.footer-box {
     display: flex;
     flex-direction: column;
     justify-content:start;
     max-width: 264px;
 }
 
-.logo-footer {
+.footer-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -444,16 +439,57 @@ body {
     color: var(--primary-brand-color);
 }
 
-.logo-footer-studio {
+.footer-logo-studio {
     color: var(--light-color);
 }
 
-.invitation {
+.footer-invitation {
     margin-top: 16px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--accept-color);
+}
+
+/*footer-social*/
+.footer-social-box {
+    padding-left: 120px;
+   }
+
+.footer-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--btn-color);
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.footer-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-link:is(:hover,:focus) {
+    background-color: var(--footer-icon-active);
 }
 
 
