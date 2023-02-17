@@ -105,7 +105,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand-color);
-}
+    }
 
 .logo-studio {
     color: var(--dark-color);
@@ -121,16 +121,14 @@ body {
 
 .nav-link {
     text-decoration: none;
+    color: var(--dark-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--dark-color);
 }
 
-.nav-link:hover,
-.nav-link:focus,
-.nav-link.current {
+.nav-link:is(:hover,:focus,.current) {
     color: var(--pressed-state-color);
 }
 
@@ -146,8 +144,7 @@ body {
     color: var(--general-text-color);
 }
 
-.address-mail:hover,
-.address-mail:focus {
+.address-mail:is(:hover,:focus) {
     color: var(--pressed-state-color);
 }
 
@@ -158,8 +155,7 @@ body {
     color: var(--general-text-color);
 }
 
-.address-tel:hover,
-.address-tel:focus {
+.address-tel:is(:hover,:focus) {
     color: var(--pressed-state-color);
 }
 
@@ -168,12 +164,11 @@ body {
 
 .hero-section {
     padding: 188px 0px;
-    background-color: var(--dark-color);    
     background-image: linear-gradient(var(--hero-bg-color),var(--hero-bg-color)), url(../images/people-office1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
-    /*background-size: 1440px;*/
+    background-color: var(--dark-color);
     }
 
 .hero-title {
@@ -193,23 +188,22 @@ body {
     padding: 16px 32px;
     margin: 0 auto;
     display: block;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
     border-radius: 4px;
-    background-color: var(--primary-brand-color);
-    color: var(--btn-color);
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    background-color: var(--primary-brand-color);
+    color: var(--btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }  
 
 .btn:is(:hover,:focus) {
     background-color: var(--pressed-state-color);   
 }
-
 
 
 /*--section1-Our advantages--*/
@@ -304,15 +298,14 @@ body {
 }
 
 .team-card {
-    
     background-color: var(--btn-color);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
 .team-card-text {
-  padding-top: 32px;
-  padding-bottom: 32px;  
+    padding-top: 32px;
+    padding-bottom: 32px;  
 }
 
 .team-member {
@@ -339,13 +332,11 @@ body {
     gap: 24px;
 }
 
-/*circle*/
 .social-item {
     width: 40px;
     height: 40px;
 }
 
-/*social logo link*/
 .social-link {
     width: 100%;
     height: 100%;
@@ -526,6 +517,7 @@ body {
 .filter-btn:focus {
     color: var(--btn-color);
     background: var(--pressed-state-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /*--project card--*/
@@ -537,10 +529,19 @@ body {
     gap: 48px 24px;
 }
 
-.project-card {
+.project-card-item {
     width: 360px;
     background: var(--btn-color);
     border: 1px solid var(--accept-color);
+    cursor: pointer;
+}
+
+.project-card-link {
+    display: block;
+}
+
+.project-card-link:is(:hover,:focus) {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card-text {
@@ -562,4 +563,5 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    color: var(--general-text-color);
 }
